@@ -1,0 +1,35 @@
+<form name="SIMPLE_FORM_2" action="#" method="GET" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="300647dcc34806a5fbd1ff4725b9f5b2" /><input type="hidden" name="WEB_FORM_ID" value="2" /><input type="hidden" name="lang" value="ru">  
+<script type="text/javascript">
+$(document).ready(function(){
+    
+var selectForm = $('#form_dropdown_SIMPLE_QUESTION_371');
+if (selectForm.val() == 121) { $('#esciz').show(); }
+    selectForm.on('change', function(){     
+        if(selectForm.val() == 121) { $('#esciz').show(); }
+        else { $('#esciz').hide(); }
+    });
+});
+    
+    function addTrObm () {
+        var showValue = +$("#show").attr('nextshow');
+        if (showValue == 12) {
+          $("#show").hide();
+        }
+        $('#w'+showValue).show();
+        $("#show").attr('nextshow', showValue+1);
+        
+    }
+</script>
+
+    <table style="border-collapse: collapse;" border="1" width="98%" align="center" cellpadding="5"> 	 
+          <tbody> 
+            <tr><td width="250">Замовник<font color='red'><span class='form-required starrequired'>*</span></font>:</td><td><input type="text"  class="inputtext"  name="Замовник" value="" size="100" /></td></tr>
+                      
+            <tr><td>Телефон<font color='red'><span class='form-required starrequired'>*</span></font>:</td><td><input type="text"  class="inputtext"  name="form_text_8" value="" size="100" /></td></tr>
+           
+            <tr><td>E-mail<font color='red'><span class='form-required starrequired'>*</span></font>:</td><td><input type="text"  class="inputtext"  name="form_email_9" value="" size="100" /></td></tr>
+           
+            <tr><td>Кількість<font color='red'><span class='form-required starrequired'>*</span></font>:</td><td><input type="text"  class="inputtext"  name="form_text_127" value="" size="100" /></td></tr>
+           
+          </tbody>
+    </table>
